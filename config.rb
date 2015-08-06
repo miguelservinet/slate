@@ -1,3 +1,6 @@
+Encoding.default_external = Encoding::UTF_8
+Encoding.default_internal = Encoding::UTF_8
+
 # Markdown
 set :markdown_engine, :redcarpet
 set :markdown,
@@ -7,13 +10,15 @@ set :markdown,
     prettify: true,
     tables: true,
     with_toc_data: true,
-    no_intra_emphasis: true
+    no_intra_emphasis: true,
+    encoding: 'utf-8'
 
 # Assets
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
 set :fonts_dir, 'fonts'
+set :encoding, 'utf-8'
 
 # Activate the syntax highlighter
 activate :syntax
@@ -23,6 +28,7 @@ activate :autoprefixer do |config|
   config.cascade  = false
   config.inline   = true
 end
+
 
 # Github pages require relative links
 activate :relative_assets

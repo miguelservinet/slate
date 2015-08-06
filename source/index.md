@@ -1,22 +1,23 @@
 ---
-title: API Reference
+title: Gotesa GaB API
 
 language_tabs:
-  - shell
-  - ruby
-  - python
-
+  - http
+  - shell: cURL
+ 
 toc_footers:
   - <a href='#'>Sign Up for a Developer Key</a>
   - <a href='http://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 includes:
+  - empresas
   - errors
 
-search: true
+search: false
 ---
 
-# Introduction
+# Introducci&oacute;n
+
 
 Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
 
@@ -24,7 +25,7 @@ We have language bindings in Shell, Ruby, and Python! You can view code examples
 
 This example API documentation page was created with [Slate](http://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
 
-# Authentication
+# Autenticaci&oacute;n
 
 > To authorize, use this code:
 
@@ -116,7 +117,7 @@ include_cats | false | If set to true, the result will also include cats.
 available | true | If set to false, the result will include kittens that have already been adopted.
 
 <aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+Remember ? a happy kitten is an authenticated kitten!
 </aside>
 
 ## Get a Specific Kitten
